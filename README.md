@@ -1,3 +1,4 @@
+MLP-based Neural Network Trading strategy
 # Stock Trading Strategy with Neural Networks
 
 📈 Python project for implementing a stock trading strategy using neural networks. Optimizes returns while managing risk and capital investment.
