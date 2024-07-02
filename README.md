@@ -4,11 +4,12 @@ MLP-based Neural Network Trading strategy
 📈 Python project for implementing a stock trading strategy using neural networks. Optimizes returns while managing risk and capital investment.
 
 ## Key Features
-- **Neural Network Model**: Utilizes a Multi-Layer Perceptron (MLP) regression model from Scikit-Learn to predict stock price movements.
-- **Data Preprocessing**: Prepares historical stock price data, calculates technical indicators (RSI, ATR, SMA, Bollinger Bands).
-- **Risk Management**: Manages capital investment and sets take-profit thresholds.
-- **Trading Signals**: Generates buy and sell signals based on predictions.
-- **Performance Metrics**: Evaluates strategy performance, including capital invested, profit/loss, total return.
+
+- **Technical Indicators**: RSI, ATR, SMA, Bollinger Bands, MACD, and Stochastic Oscillator.
+- **Model**: Multi-layer Perceptron (MLP) Regressor with hyperparameter tuning.
+- **Risk Management**: Uses a risk percentage and take profit threshold for trading decisions.
+- **Performance Metrics**: Calculates and displays key performance metrics.
+- **Visualization**: Includes functions to plot profit/loss, liquidity over time, and compare against a benchmark.
 - **Trade Information**: Provides detailed trade data.
 
 ## Usage
@@ -25,19 +26,14 @@ MLP-based Neural Network Trading strategy
 - Matplotlib
 - Yfinance
 
-## Example Usage
-```python
-if __name__ == '__main__':
-    ticker = 'AAPL'
-    start_date = '2023-07-31'
-    end_date = '2023-09-30'
-    strategy = NeuralNetworkStrategy(ticker, start_date, end_date)
-    strategy.run()
-    trade_info = strategy.get_trade_info()
-    
-    # Display trade information
-    for info in trade_info:
-        ...
+## Results
+
+- **Final Balance**: $200,371.27
+- **Total Return**: 0.95%
+- **Annualized Return**: 1.05%
+- **Volatility**: 0.21%
+- **Sharpe Ratio**: 3.02
+- **Max Drawdown**: -0.16%
 
 
 Disclaimer
